@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #151950;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+@import '~@progress/kendo-theme-default/dist/all.css';
+
+.grid-container {
+  padding: 20px;
+
+  .k-grid {
+    width: 100%;
+  }
+
+  .k-grid-header {
+    th {
+      white-space: nowrap; // Prevent header text from wrapping
+    }
+  }
+
+  .k-grid-content {
+    td {
+      white-space: nowrap; // Prevent cell text from wrapping
+    }
+
+    .error {
+      border: 2px solid red; // Example styling for invalid input
+      background-color: rgba(255, 0, 0, 0.2);
+    }
+
+    
+  }
+
+  .k-pager-wrap {
+    margin-top: 20px;
+  }
+}
+
+.error-highlight {
+  background-color: rgba(255, 0, 0, 0.2); /* Light red background */
+}
